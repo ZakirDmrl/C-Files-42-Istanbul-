@@ -6,7 +6,7 @@
 /*   By: mdemirel <zakirr2004@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 11:23:01 by mdemirel          #+#    #+#             */
-/*   Updated: 2024/01/29 15:51:43 by mdemirel         ###   ########.fr       */
+/*   Updated: 2024/01/29 16:55:39 by mdemirel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,4 @@ void	ft_print_comb(void)
 		}
 		a++;
 	}
-}
-
-int main()
-{
-	ft_print_comb();
-	return 0;
 }
