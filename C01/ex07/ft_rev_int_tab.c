@@ -1,16 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdemirel <zakirr2004@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 16:10:21 by mdemirel          #+#    #+#             */
-/*   Updated: 2024/01/29 16:16:49 by mdemirel         ###   ########.fr       */
+/*   Created: 2024/01/30 01:41:19 by mdemirel          #+#    #+#             */
+/*   Updated: 2024/01/30 01:41:19 by mdemirel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+void ft_rev_int_tab(int *tab, int size)
 {
-	*nbr = 42;
+	int i;
+	int temp;
+
+	i = 0;
+	while (i < size/2)
+	{
+		temp = *(tab+i);
+		*(tab+i) = *(tab+size-i-1);
+		*(tab+size-i-1) = temp;
+		i++;
+	}
 }
